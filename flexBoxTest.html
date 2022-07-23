@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CodePen - Demo FlexBox</title>
+        <Style>
+            
+            .headerContainer{
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background-color: rgb(217, 7, 7);
+                font-weight: bold;
+                padding: 10px;
+
+            }
+
+            .footerContainer{
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background-color: rgb(128, 201, 126);
+                font-weight: bold;
+                padding: 10px; 
+            }
+
+            .mainContainer{
+                display: flex;
+                flex-flow: row wrap;
+                font-weight: bold;
+                text-align: center;
+
+            }
+
+            .mainContentItem{
+                text-align: left;
+                background: deepskyblue;
+
+            }
+
+            article{
+                padding: 10px;
+                margin: 10px;
+                background: aqua;
+            }
+
+
+            .sideBarLeftItem{ background: gold;}
+            .sideBarRighttItem{ background: hotpink;}
+
+            .sideBarItems{ flex: 1 0 0; border: 8px solid green}
+            .mainContaentItem{ flex: 3 0px;}
+            .sideBarLeftItem{ order: 1;}
+            .mainContaentItem{ order: 2;}
+            .sideBarRighttItem{ order: 3;}
+
+
+        </Style>
+    </head>
+    <body>
+        <header class="headerContainer"><h1>HEADER - Sample FlexBox  Exmple</h1></header>
+        <div class="mainContainer">
+        <section class="mainContaentItem">
+            <article>
+                <h2>First artical</h2>
+                <p></p>
+            </article>
+            <article>
+                <h2>Second artical</h2>
+                <p></p>
+            </article>
+            <article>
+                <h2>third artical</h2>
+                <p></p>
+            </article>
+
+
+
+        </section>
+        <sideBar class="sideBarItems sideBarLeftItem"><div class="center"><p>Left side Bar</p></div></sideBar>
+        <sideBar class="sideBarItems sideBarRighttItem"><div class="center"><p>Right side Bar</p></div></sideBar>
+
+        </div>
+        <footer class="footerContainer">Footer</footer>
+    </body>
+</html>
